@@ -29,7 +29,7 @@ export default function About() {
             </Link>
           </div>
           <img
-            src="public/images/imageHOME/WhatsApp Image 2026-09-04 at 22.02.48.jpeg"
+            src="/images/imageHOME/WhatsApp Image 2026-09-04 at 22.02.48.jpeg"
             alt={COMPANY.fullName}
             className="aspect-[4/3.4] w-full object-cover"
           />

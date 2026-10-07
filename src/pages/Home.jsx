@@ -7,8 +7,8 @@ import { buildSimpleWhatsAppLink } from '../utils/whatsapp'
 import { COMPANY } from '../config'
 
 const CATEGORY_IMAGES = {
-  ameublement: 'public/images/imageA9/WhatsApp Image 2026-09-24 at 20.44.28.jpeg',
-  construction: 'public/images/imageA10/WhatsApp Image 2026-09-24 at 20.51.17.jpeg',
+  ameublement: '/images/imageA9/WhatsApp Image 2026-09-24 at 20.44.28.jpeg',
+  construction: '/images/imageA10/WhatsApp Image 2026-09-24 at 20.51.17.jpeg',
 }
 
 export default function Home() {
@@ -56,7 +56,7 @@ export default function Home() {
 
           <div className="relative">
             <img
-              src="public/images/imageHOME/WhatsApp Image 2026-08-23 at 07.33.40.jpeg"
+              src="/images/imageHOME/WhatsApp Image 2026-08-23 at 07.33.40.jpeg"
               alt="Ameublement et matériaux de construction ITN_Designe"
               className="aspect-[4/3.4] w-full object-cover"
             />
