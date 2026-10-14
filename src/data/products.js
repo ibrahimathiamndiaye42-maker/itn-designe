@@ -24,7 +24,7 @@ export const PRODUCTS = [
     name: 'Chambre à coucher moderne Marron Blanc',
     category: 'chambre-a-coucher',
     subcategory: 'Chambres à coucher',
-    price: 10,
+    
     status: 'disponible_sur_place',
     shortDescription: 'Ensemble chambre à coucher en bois laminé avec finition moderne.',
     description:

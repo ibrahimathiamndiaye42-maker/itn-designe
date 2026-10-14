@@ -1,8 +1,60 @@
+// import { create } from 'zustand'
+// import { persist } from 'zustand/middleware'
+
+// // Panier global, persisté dans le navigateur (localStorage) pour survivre
+// // aux rechargements de page. items = [{ id, name, price, qty, image, status }]
+// export const useCart = create(
+//   persist(
+//     (set, get) => ({
+//       items: [],
+
+//       addItem: (product, qty = 1) => {
+//         const items = get().items
+//         const existing = items.find((i) => i.id === product.id)
+//         if (existing) {
+//           set({
+//             items: items.map((i) =>
+//               i.id === product.id ? { ...i, qty: i.qty + qty } : i
+//             ),
+//           })
+//         } else {
+//           set({
+//             items: [
+//               ...items,
+//               {
+//                 id: product.id,
+//                 name: product.name,
+//                 price: product.price,
+//                 image: product.images?.[0],
+//                 status: product.status,
+//                 qty,
+//               },
+//             ],
+//           })
+//         }
+//       },
+
+//       removeItem: (id) => set({ items: get().items.filter((i) => i.id !== id) }),
+
+//       updateQty: (id, qty) => {
+//         if (qty < 1) return
+//         set({ items: get().items.map((i) => (i.id === id ? { ...i, qty } : i)) })
+//       },
+
+//       clearCart: () => set({ items: [] }),
+
+//       totalItems: () => get().items.reduce((sum, i) => sum + i.qty, 0),
+//       totalPrice: () => get().items.reduce((sum, i) => sum + i.qty * i.price, 0),
+//     }),
+//     { name: 'itn-designe-cart' }
+//   )
+// )
+
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 
 // Panier global, persisté dans le navigateur (localStorage) pour survivre
-// aux rechargements de page. items = [{ id, name, price, qty, image, status }]
+// aux rechargements de page. items = [{ id, name, qty, image, status }]
 export const useCart = create(
   persist(
     (set, get) => ({
@@ -24,7 +76,6 @@ export const useCart = create(
               {
                 id: product.id,
                 name: product.name,
-                price: product.price,
                 image: product.images?.[0],
                 status: product.status,
                 qty,
@@ -44,7 +95,10 @@ export const useCart = create(
       clearCart: () => set({ items: [] }),
 
       totalItems: () => get().items.reduce((sum, i) => sum + i.qty, 0),
-      totalPrice: () => get().items.reduce((sum, i) => sum + i.qty * i.price, 0),
+
+      // Conservé à 0 pour ne pas casser les fichiers qui l'appellent encore.
+      // Plus aucun prix n'est géré sur le site.
+      totalPrice: () => 0,
     }),
     { name: 'itn-designe-cart' }
   )
