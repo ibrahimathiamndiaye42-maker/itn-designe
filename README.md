@@ -1,6 +1,6 @@
 # ITN_Designe — Site e-commerce (React + Vite)
 
-Catalogue e-commerce pour ITN_Designe (ameublement et matériaux de construction),
+Catalogue e-commerce pour ITN_Designe (chambre à coucher et salon),
 avec panier, fiches produits, filtres/recherche et commande par WhatsApp.
 
 ## Démarrage

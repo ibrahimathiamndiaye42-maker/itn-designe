@@ -15,8 +15,8 @@ export default function Footer() {
           <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-cream/60">Navigation</h3>
           <ul className="space-y-2 text-sm">
             <li><Link to="/produits" className="hover:text-cream">Produits</Link></li>
-            <li><Link to="/produits?categorie=ameublement" className="hover:text-cream">Ameublement</Link></li>
-            <li><Link to="/produits?categorie=construction" className="hover:text-cream">Construction</Link></li>
+            <li><Link to="/produits?categorie=chambre-a-coucher" className="hover:text-cream">Chambre à coucher</Link></li>
+            <li><Link to="/produits?categorie=salon" className="hover:text-cream">Salon</Link></li>
             <li><Link to="/a-propos" className="hover:text-cream">À propos</Link></li>
             <li><Link to="/contact" className="hover:text-cream">Contact</Link></li>
           </ul>

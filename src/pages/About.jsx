@@ -10,13 +10,11 @@ export default function About() {
           <div>
             <h1 className="font-display text-4xl text-ink">À propos de {COMPANY.name}</h1>
             <p className="mt-5 text-ink/75">
-              {COMPANY.fullName} est une entreprise spécialisée dans la vente de matériel de
-              construction et de produits d'ameublement. Nous proposons des solutions adaptées
-              aux besoins des particuliers, professionnels et familles souhaitant construire,
-              aménager ou équiper leur maison.
+              {COMPANY.fullName} est une entreprise spécialisée dans la vente de produits
+              pour la chambre à coucher et le salon. Nous proposons des solutions adaptées a vos besoins et a votre budget
             </p>
             <p className="mt-4 text-ink/75">
-              De la chambre à coucher au sac de ciment, nous accompagnons chaque projet avec des
+              De la chambre à coucher au salon, nous accompagnons chaque projet avec des
               produits sélectionnés pour leur qualité et leur durabilité, et un service de
               commande simple via WhatsApp.
             </p>
@@ -39,7 +37,7 @@ export default function About() {
       <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4">
           {[
-            { icon: Sofa, label: 'Ameublement soigné' },
+            { icon: Sofa, label: 'Chambre à coucher soignée' },
             { icon: Hammer, label: 'Matériaux robustes' },
             { icon: Users, label: 'Service client réactif' },
             { icon: Award, label: 'Qualité et durabilité' },

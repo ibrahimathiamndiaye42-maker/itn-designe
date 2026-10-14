@@ -9,8 +9,8 @@ import { buildCartAwareWhatsAppLink } from '../utils/whatsapp'
 const NAV_LINKS = [
   { to: '/', label: 'Accueil', end: true },
   { to: '/produits', label: 'Produits' },
-  { to: '/produits?categorie=ameublement', label: 'Ameublement' },
-  { to: '/produits?categorie=construction', label: 'Construction' },
+  { to: '/produits?categorie=chambre-a-coucher', label: 'Chambre à coucher' },
+  { to: '/produits?categorie=salon', label: 'Salon' },
   { to: '/a-propos', label: 'À propos' },
   { to: '/contact', label: 'Contact' },
 ]
