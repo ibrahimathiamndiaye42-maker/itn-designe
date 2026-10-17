@@ -12,3 +12,14 @@ export const COMPANY = {
   address: 'Dakar, Sénégal',
   hours: 'Lun – Sam · 8h30 – 19h00',
 }
+
+// ITN Business : personnalisation par commerçant (nom, URL du site pour le QR Code, réseaux)
+export const BRAND = {
+  shopName: 'ITN Design & Création',
+  siteUrl: '', // ex. 'https://www.mon-site.com' (vide = adresse actuelle du site)
+}
+export const SOCIALS = {
+  instagram: 'https://www.instagram.com/itn_design_creation',
+  facebook: 'https://www.facebook.com/profile.php?id=61562306731004',
+  tiktok: 'https://www.tiktok.com/@itn_design',
+}

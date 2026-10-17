@@ -1,5 +1,5 @@
 import { Phone, MapPin, Clock, MessageCircle, Facebook, Instagram } from 'lucide-react'
-import { COMPANY, WHATSAPP_NUMBER } from '../config'
+import { COMPANY, WHATSAPP_NUMBER, SOCIALS } from '../config'
 import { buildSimpleWhatsAppLink } from '../utils/whatsapp'
 
 export default function Contact() {
@@ -42,7 +42,11 @@ export default function Contact() {
             <Facebook className="mt-0.5 text-wood" size={20} />
             <div>
               <p className="font-medium text-ink">Réseaux sociaux</p>
-              <p className="text-ink/70">Facebook · Instagram — liens à ajouter</p>
+              <p className="flex flex-wrap gap-x-4 text-ink/70">
+                <a href={SOCIALS.instagram} target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Instagram</a>
+                <a href={SOCIALS.facebook} target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">Facebook</a>
+                <a href={SOCIALS.tiktok} target="_blank" rel="noopener noreferrer" className="underline hover:text-ink">TikTok</a>
+              </p>
             </div>
           </div>
 

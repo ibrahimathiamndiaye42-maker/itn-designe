@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Phone, MapPin, Clock } from 'lucide-react'
-import { COMPANY } from '../config'
+import { COMPANY, SOCIALS } from '../config'
 
 export default function Footer() {
   return (
@@ -28,11 +28,16 @@ export default function Footer() {
             <li className="flex items-center gap-2"><Phone size={15} /> {COMPANY.phone}</li>
             <li className="flex items-center gap-2"><MapPin size={15} /> {COMPANY.address}</li>
             <li className="flex items-center gap-2"><Clock size={15} /> {COMPANY.hours}</li>
+            <li className="flex gap-4 pt-1">
+              <a href={SOCIALS.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-cream">Instagram</a>
+              <a href={SOCIALS.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-cream">Facebook</a>
+              <a href={SOCIALS.tiktok} target="_blank" rel="noopener noreferrer" className="hover:text-cream">TikTok</a>
+            </li>
           </ul>
         </div>
       </div>
       <div className="border-t border-cream/10 px-4 py-4 text-center text-xs text-cream/50">
-        © {new Date().getFullYear()} {COMPANY.fullName}. Tous droits réservés.
+        © {new Date().getFullYear()} {COMPANY.fullName}. Tous droits réservés. · <Link to="/business" className="underline">Espace pro ITN Business</Link>
       </div>
     </footer>
   )
